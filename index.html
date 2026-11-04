@@ -1,0 +1,169 @@
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>URBAN FASHION | Tienda de ropa</title>
+
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>The Jordan Store</h1>
+        <p>Tu estilo, tu personalidad</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#carrito">Carrito 🛒</a>
+    </nav>
+
+    <!-- PORTADA -->
+    <section class="portada" id="inicio">
+        <h2>VISTE CON ESTILO</h2>
+        <p>Descubre nuestra nueva colección</p>
+        <a href="#productos" class="boton">
+            Comprar ahora
+        </a>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <main id="productos">
+        <h2>NUESTROS PRODUCTOS</h2>
+
+        <div class="contenedor-productos">
+
+            <article class="producto">
+                <img src="goodspeed2.jpg"
+                     alt="Poloche goodspeed original">
+
+                <h3>Goodspeed carabela</h3>
+                <p>RD$ 850</p>
+
+                <button onclick="agregarAlCarrito('Camiseta blanca', 850)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="goodspeed1.jpeg.jpg"
+                     alt="Goodspeed Formula 1">
+
+                <h3>Goodspeed formula 1</h3>
+                <p>RD$ 1,500</p>
+
+                <button onclick="agregarAlCarrito('Pantalón jeans', 1500)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <article class="producto">
+                <img src="goodspeed.jpg"
+                     alt="Poloche goodspeed">
+
+                <h3>Goodspeed three time </h3>
+                <p>RD$ 1,200</p>
+
+                <button onclick="agregarAlCarrito('Vestido elegante', 1200)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            
+            <article class="producto">
+                <img src="goodspeed3.jpeg.jpg"
+                     alt="Poloche goodspeed original">
+
+                <h3>Goodspeed Space</h3>
+                <p>RD$ 850</p>
+
+                <button onclick="agregarAlCarrito('Camiseta blanca', 850)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            
+            <article class="producto">
+                <img src="gorra1.jpeg"
+                     alt="New era original">
+
+                <h3>New era Yankes</h3>
+                <p>RD$ 500</p>
+
+                <button onclick="agregarAlCarrito('Camiseta blanca', 850)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+
+            
+            <article class="producto">
+                <img src="gorra2.jpeg"
+                     alt="Gorra new era">
+
+                <h3>New era LA</h3>
+                <p>RD$ 600</p>
+
+                <button onclick="agregarAlCarrito('Camiseta blanca', 850)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            
+            <article class="producto">
+                <img src="teni1.jpeg"
+                     alt="Jordan">
+
+                <h3>Jordan</h3>
+                <p>RD$ 7500</p>
+
+                <button onclick="agregarAlCarrito('Camiseta blanca', 850)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            
+            <article class="producto">
+                <img src="teni2.jpeg"
+                     alt="Jordan">
+
+                <h3>Jordan</h3>
+                <p>RD$ 850</p>
+
+                <button onclick="agregarAlCarrito('Camiseta blanca', 850)">
+                    Agregar al carrito
+                </button>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- CARRITO -->
+    <section id="carrito" class="carrito">
+        <h2>MI CARRITO 🛒</h2>
+
+        <ul id="lista-carrito"></ul>
+
+        <h3 id="total">Total: RD$ 0</h3>
+
+        <button onclick="vaciarCarrito()">
+            Vaciar carrito
+        </button>
+    </section>
+
+    <!-- CONTACTO -->
+    <footer id="contacto">
+        <h2>URBAN FASHION</h2>
+        <p>Contacto: 849-465-3164</p>
+        <p>© 2026 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
